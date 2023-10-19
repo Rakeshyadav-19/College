@@ -1,0 +1,33 @@
+//Relational operator.
+/*Rakesh Yadav
+roll no 1029*/
+#include<stdio.h>
+#include<conio.h>
+
+int main()
+{
+int i,j,k;
+clrscr();
+printf("Enter two number");
+scanf("%d %d", &i, &j);
+
+print("Enter operator=");
+scanf("%d",&k);
+
+if(k=+)
+printf("The addition is=%d",i+j);
+else if(k=-)
+printf("\nThe substraction is=%d",i-j);
+
+else if(k=*)
+printf("\nThe smaller no is=%d",i );
+else
+printf("\nTHe smaller  no is=%d",i);
+
+if(i==j)
+printf("\nTHe numbers are equal");
+else
+printf("\nTHe numbers are not equal");
+
+getch();
+}

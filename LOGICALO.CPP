@@ -1,0 +1,25 @@
+//Logical operator.
+/*Rakesh Yadav
+roll no 1029*/
+
+#include<stdio.h>
+#include<conio.h>
+
+int main()
+{
+
+int i=1,j=0,a;
+
+clrscr();
+
+printf("The vale of i=1 \nThe value of j=0");
+
+a=i&&j;
+printf("\n\nThe logical AND operator=%d",a);
+printf("\nThe logical OR operator=%d",i||j);
+printf("\nThe logical NOT of i=%d",!i);
+printf("\nThe logical NOT of j=%d",!j);
+
+getch();
+
+}
