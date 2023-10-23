@@ -1,0 +1,502 @@
+//W.A.P in c++ using single inheritance.
+/*Rakesh Yadav
+Roll no. 1029*/
+
+#include<iostream>
+using namespace std;
+
+class student
+{
+    private:
+            int rn;
+            string n;
+    public:
+            void input()
+            {
+                cout<<"Enter your Roll number:- ";
+                cin>>rn;
+                cout<<"Enter your name:- ";
+                cin>>n;
+            }        
+};
+
+class marks:public student
+{
+    private: 
+            int p,c,m;
+            float t,P;
+    public: 
+            void output()
+            {
+                cout<<"Enter your marks in P C M- ";
+                cin>>p>>c>>m;
+                t=p+c+m;
+                P=t/3;
+                cout<<"your total is "<<t<<endl;
+                cout<<"Your percentage is "<<P<<"%";
+            }
+};
+int main()
+{
+   marks c;
+   c.input();
+   c.output();
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//W.A.P in c++ using single inheritance.
+/*Rakesh Yadav
+Roll no. 1029*/
+
+#include<iostream>
+using namespace std;
+
+class product
+{
+    private:
+            int c;
+            string n;
+    public:
+            void input()
+            {
+                cout<<"Enter product name:- ";
+                cin>>n;
+                cout<<"Enter product code:- ";
+                cin>>c;
+            }        
+};
+
+class bill:public product
+{
+    private: 
+            float q,p,t;
+    public: 
+            void output()
+            {
+                cout<<"Enter price of product ";
+                cin>>p;
+                cout<<"your quantity of product ";
+                cin>>q;
+                t=q*p;
+                cout<<"Your total is "<<t<<"Rs.";
+            }
+};
+int main()
+{
+   bill c;
+   c.input();
+   c.output();
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//W.A.P in c++ using multiple inheritance.
+/*Rakesh Yadav
+Roll no. 1029*/
+
+#include<iostream>
+using namespace std;
+
+class student
+{
+    private:
+            int rn;
+            string n;
+    public:
+            void stu()
+            {
+                cout<<"Enter your Roll number:- ";
+                cin>>rn;
+                cout<<"Enter your name:- ";
+                cin>>n;
+            }        
+};
+
+class sport
+{
+    private:
+            float h,w;
+            string name;
+    public:
+            void spo()
+            {
+                cout<<"Enter your Height and Weight: ";
+                cin>>h>>w;
+                cout<<"Enter your sport name ";
+                cin>>name;
+            }
+};
+
+class result:public student,public sport
+{
+     private: 
+            int p,c,m;
+            float t,P;
+    public: 
+            void res()
+            {
+                cout<<"Enter your marks in P C M- ";
+                cin>>p>>c>>m;
+                t=p+c+m;
+                P=t/3;
+                cout<<"your total is "<<t<<endl;
+                cout<<"Your percentage is "<<P<<"%";
+            }
+}; 
+int main()
+{
+  result c;
+   c.stu();
+   c.spo();
+   c.res();
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//W.A.P in c++ using multiple inheritance.
+/*Rakesh Yadav
+Roll no. 1029*/
+
+#include<iostream>
+using namespace std;
+
+class circle
+{
+    public:
+            float r;
+    public:
+            void cir()
+            {
+                cout<<"Enter Raidus of circle:- ";
+                cin>>r;
+            }        
+};
+
+class square
+{
+    public:
+            float s;
+    public:
+            void squ()
+            {
+                cout<<"Enter side of square: ";
+                cin>>s;
+            }
+};
+
+class area:public circle,public square
+{
+     public: 
+            float as,ac;
+    public: 
+            void are()
+            {
+                ac=3.14*r*r;
+                as=s*s;
+                cout<<"Area of circle is "<<ac<<endl;
+                cout<<"Area of square is "<<as;
+            }
+}; 
+int main()
+{
+   area a;
+   a.cir();
+   a.squ();
+   a.are();
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ //W.A.P in c++ using multilevel inheritance.
+/*Rakesh Yadav
+Roll no. 1029*/
+
+#include<iostream>
+using namespace std;
+
+class student
+{
+    protected:
+            int rn;
+            string n;
+    public:
+            void stu()
+            {
+                cout<<"Enter your Roll number:- ";
+                cin>>rn;
+                cout<<"Enter your name:- ";
+                cin>>n;
+            }        
+};
+
+class marks:public student
+{
+    protected:
+            int p,c,m;
+            float t,P;
+    public: 
+            void mar()
+            {
+                cout<<n<<",enter your marks in P C M- ";
+                cin>>p>>c>>m;
+               
+            }
+};
+
+class total:public marks
+{
+    public: 
+            void tot()
+            {
+                t=p+c+m;
+                P=t/3;
+                cout<<"your total is "<<t<<endl;
+                cout<<"Your percentage is "<<P<<"%";
+            }
+}; 
+int main()
+{
+   total c;
+   c.stu();
+   c.mar();
+   c.tot();
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ //W.A.P in c++ using multilevel inheritance.
+/*Rakesh Yadav
+Roll no. 1029*/
+
+#include<iostream>
+using namespace std;
+
+class product
+{
+    protected:
+            string n;
+    public:
+            void pro()
+            {
+                cout<<"Enter product name:- ";
+                cin>>n;
+                
+            }        
+};
+
+class quantity:public product
+{
+    protected:
+            int q,p;
+    public: 
+            void qua()
+            {
+                cout<<"Enter "<<n<<" price:- ";
+                cin>>p;
+                cout<<"enter quantity of "<<n<<" ";
+                cin>>q;
+               
+            }
+};
+
+class total:public quantity
+{
+    public:
+            float t;
+    public: 
+            void tot()
+            {
+                t=(p*q);
+                cout<<"your total is "<<t<<"Rs."<<endl;
+            }
+}; 
+int main()
+{
+   total c;
+   c.pro();
+   c.qua();
+   c.tot();
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Wrong
+//W.A.P in C++ using heriachical inherutance.
+/*Rakesh Yadav
+Roll no. 1029*/
+
+#include<iostream>
+using namespace std;
+class input
+{
+    public:
+            float l,r;
+    public:
+            void in()
+            {
+                cout<<"Enter side of square: ";
+                cin>>l;
+                cout<<"Enter raidus of circle: ";
+                cin>>r;
+            }
+};
+class square:public input
+{
+    float as;
+    public:
+        void sq()
+        {
+            as=l*l;
+            cout<<"The area of square is: "<<as<<endl;
+
+        }
+};
+class circle:public input
+{
+    float ac;
+    public:
+        void cr()
+        {
+            ac=3.14*r*r;
+            cout<<"The area of circle is: "<<ac;
+        }
+};
+int main()
+{
+   square s;
+   s.in();
+   s.sq();
+   circle c;
+   c.cr();
+    return 0;
+}
