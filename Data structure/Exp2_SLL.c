@@ -18,7 +18,7 @@ void search();
 void main ()  
 {  
     int choice =0;  
-    while(choice != 9)   
+    while(choice!=9)   
     {  
         printf("\n\n*********Main Menu*********\n");  
         printf("\nChoose one option from the following list ...\n");  
