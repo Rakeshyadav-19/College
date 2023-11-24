@@ -1,4 +1,4 @@
-//To Implement Program for Stack using List
+//To Implement Program for Queue using array.
 #include <stdio.h>
 #include <stdbool.h>
 #include <stdlib.h>
