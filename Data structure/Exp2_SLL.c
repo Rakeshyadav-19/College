@@ -17,13 +17,15 @@ void display();
 void search();  
 void main ()  
 {  
-    int choice =0;  
+    int choice =0; 
+
+    printf("\n\n*********Singly Linked List*********\n");
+        printf("Name: Rakesh S. Yadav\nRoll No. 2029"); 
+        printf("\nChoose one option from the following list ...\n");  
+        printf("==============================================");  
+        printf("\n1.Insert in begining\n2.Insert at last\n3.Insert at any random location\n4.Delete from Beginning\n  5.Delete from last\n6.Delete node after specified location\n7.Search for an element\n8.Show\n9.Exit\n"); 
     while(choice!=9)   
     {  
-        printf("\n\n*********Main Menu*********\n");  
-        printf("\nChoose one option from the following list ...\n");  
-        printf("\n===============================================\n");  
-        printf("\n1.Insert in begining\n2.Insert at last\n3.Insert at any random location\n4.Delete from Beginning\n  5.Delete from last\n6.Delete node after specified location\n7.Search for an element\n8.Show\n9.Exit\n");  
         printf("\nEnter your choice?\n");         
         scanf("\n%d",&choice);  
         switch(choice)  
