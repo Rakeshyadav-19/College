@@ -17,7 +17,6 @@ int main()
     {
         for(j = 0;j < c;j++)
         {
-            printf("\nmatrix[%d]x[%d] ",i,j);
             scanf("%d",&alc[i][j]);
         }
     }
@@ -27,7 +26,6 @@ int main()
     {
         for(j = 0;j < c;j++)
         {
-            printf("\nmatrix[%d]x[%d] ",i,j);
             scanf("%d",&max[i][j]);
         }
     }

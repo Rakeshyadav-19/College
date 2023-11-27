@@ -11,6 +11,7 @@ sem_t s; //semaphore variable
 
 int main()
 {
+    printf("Rakesh Yadav\n2029\n");
 sem_init(&s,0,1); //initialize semaphore variable - 1st argument is address of variable, 2nd isnumber of processes sharing semaphore, 3rd argument is the initial value of semaphore variable
 pthread_t thread1, thread2;
 pthread_create(&thread1, NULL, fun1, NULL);
