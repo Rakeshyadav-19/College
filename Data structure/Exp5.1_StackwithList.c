@@ -14,13 +14,13 @@ struct node *head;
 void main ()
 {
     int choice=0;
-
-    printf("\n\t ** Implimentation of Stack operations using linked list**\n");
-    printf("\n\t----------------------------------------------\n");
+	printf("Name:Rakesh Yadav\nRoll no. 2029");
+    printf("\n**Implimentation of Stack operations using linked list**");
+    printf("\n----------------------------------------------");
+	printf("\nChose one from the below options");
+	printf("\n1.Push\n2.Pop\n3.Show\n4.Exit");
     while(choice != 4)
     {
-	printf("\n\nChose one from the below options\n");
-	printf("\n1.Push\n2.Pop\n3.Show\n4.Exit");
 	printf("\n Enter your choice \n");
 	scanf("%d",&choice);
 	switch(choice)

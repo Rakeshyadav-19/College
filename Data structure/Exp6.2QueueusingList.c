@@ -49,6 +49,7 @@ void display() {
 }
 int main() {
     int ch; 
+    printf("Name:Rakesh Yadav\nRoll no. 2029");
     printf("**Dynamic Queue**\n\n");
     printf("1. Enqueue\n2. Dequeue\n3. Display All Elements\n4. Exit");
     do {

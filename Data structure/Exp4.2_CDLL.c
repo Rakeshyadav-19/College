@@ -17,13 +17,13 @@ void search();
 int main ()  
 {  
     int choice=0;  
-
-    while(choice!=9)  
-    {  
-        printf("\n*********Main Menu*********\n");  
+    printf("Name:Rakesh Yadav\nRoll no. 2029");
+     printf("\n*********Circular Doubly Linked List*********\n");  
         printf("\nChoose one option from the following list ...\n");  
         printf("\n===============================================\n");  
-        printf("\n1.Insert in Beginning\n2.Insert at last\n3.Delete from Beginning\n4.Delete from last\n5.Search\n6.Show\n7.Exit\n");  
+        printf("\n1.Insert in Beginning\n2.Insert at last\n3.Delete from Beginning\n4.Delete from last\n5.Search\n6.Show\n7.Exit\n");
+    while(choice!=9)  
+    {    
         printf("\nEnter your choice?\n");  
         scanf("\n%d",&choice);  
         switch(choice)  

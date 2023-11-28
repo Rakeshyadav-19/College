@@ -31,6 +31,7 @@ int main() {
     char infix[MAX_EXPR_SIZE], postfix[MAX_EXPR_SIZE];
     char stack[MAX_EXPR_SIZE];
     int top = 0, i, j;
+    printf("Name : Rakesh S. Yadav\nROll No:2029\n");
     printf("**Infix To Postfix**\n\n");
     printf("Enter an Infix Expression: ");
     scanf("%s", infix);
