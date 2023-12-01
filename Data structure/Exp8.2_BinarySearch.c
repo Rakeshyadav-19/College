@@ -47,6 +47,7 @@ void display(int * array, int n) {
 }
 int main() {
     int sizearr, data, i, n;
+    printf("Name :Rakesh S. Yadav\n Roll no: 2029\n");
     printf("====Binary Search====\n\n");
     printf("Enter Size Of Array: ");
     do {
