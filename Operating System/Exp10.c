@@ -13,7 +13,8 @@ int main()
     void consumer();
      int wait(int);
      int signal(int);
-    
+
+    printf("Name: Rakesh Yadav\nRoll No. 2029");
     printf("\n1.Procedure  \n2.Consumer \n3.Exit");
 
     while(1)
@@ -52,7 +53,7 @@ int wait(int s)
         return(++s);
     }
 
-    void procedure()
+    void producer()
     {
         mutex = wait(mutex);
         full = signal(full);
