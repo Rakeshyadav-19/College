@@ -3,7 +3,7 @@ void main()
 {
     int i,j,k,min,rs[25],m[10],count[10],flag[25],n,f,pf=0,next=1;
 
-    printf("Name: Rakesh Yadav\nRoll No. 2029");
+    printf("Name: Rakesh Yadav\nRoll No. 2029\n");
     
     printf("Enter the length of reference string --  ");
     scanf("%d",&n);

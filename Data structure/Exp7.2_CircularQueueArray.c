@@ -7,7 +7,8 @@ typedef struct {
     int rear;
 } Queue;
 void enqueue(Queue * q, int value) {
-    if (is_full(q)) {
+    if(is_full(q)) 
+    {
         printf("Queue is full\n");
         return;
     }
@@ -15,7 +16,8 @@ void enqueue(Queue * q, int value) {
     q -> rear = (q -> rear + 1) % QUEUE_SIZE;
 }
 void dequeue(Queue * q) {
-    if(is_empty(q)) {
+    if(is_empty(q)) 
+    {
         printf("Queue is empty\n");
         return;
     }
