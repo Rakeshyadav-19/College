@@ -7,12 +7,13 @@ print(X,y,z)
 
 #Example 2:
 #input
-name=input("Enter your name")
+name=input("Enter your name: ")
 #input
-print ("Hello" + name) 
+print ("Hello " + name) 
 print (type(name))
 
 #Example 3:
+print("Addition: ")
 #input 
 print("Enter first Number") 
 num1 = int(input())
