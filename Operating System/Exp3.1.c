@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 
-void main()
+int main()
 {
     int n,i,bt[100],wt=0,tat=0;
     float avg_wt,avg_tat;
