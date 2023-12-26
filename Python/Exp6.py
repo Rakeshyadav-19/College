@@ -24,7 +24,8 @@ for entry in randomlist:
     except:
         print("oops!",sys.exc_info()[0],"occured")
         print("Next entry")
-        print("\n")
+print("The reciprocal of entry  is",r)
+print("\n")
 
 #3
 try:

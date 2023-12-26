@@ -1,3 +1,7 @@
+#import numpy
+import numpy
+arr = numpy.array([50,60,70])
+print(arr)
 
 #numpy as np
 import numpy as np
@@ -12,12 +16,8 @@ arr = np.array([1,2,3,4,5])
 print(arr)
 print(type(arr))
 
-#import numpy ass np
-arr = np.array([50])
-print(arr)
-
 #o-Darray
-arr = np.array(22)
+arr = np.array([22])
 print(arr)
 
 #1-D array
