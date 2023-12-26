@@ -11,8 +11,9 @@ int main()
 
     void producer();
     void consumer();
-     int wait(int);
-     int signal(int);
+     
+    int wait(int);
+    int signal(int);
 
     printf("Name: Rakesh Yadav\nRoll No. 2029");
     printf("\n1.Procedure  \n2.Consumer \n3.Exit");
@@ -44,10 +45,11 @@ int main()
         }
     }
 }
-int wait(int s)
+    int wait(int s)
     {
         return(--s);
     }
+    
     int signal(int s)
     {
         return(++s);

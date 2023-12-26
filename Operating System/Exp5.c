@@ -59,15 +59,15 @@ int main()
                 for(j = 0;j<c;j++)
                 {
                     if(need[i][j] > available[j])
-                    break;
+                        break;
                 }
-                if(j == c)
+                if(j==c)
                 {
                     safe[count] = i;
                     done[i] =1;
                     for(j=0;j<c;j++)
                     {
-                        available[j] += alc[i][j];
+                        available[j]+=alc[i][j];
                     }
                     count++;
                     terminate = 0;
@@ -84,6 +84,7 @@ int main()
             break;
         }
     }
+
     if(terminate != (p-1))
     {
         printf("\nAvailabe resources after compilation\n");

@@ -15,7 +15,7 @@ int main()
         printf("Enter the burst time of process[%d]",i+1);
         scanf("%d",&bt[i]);
     }
-    printf("\nPid\t\tBT\t\t WT\t\t TAT");
+    printf("\nPid\t\tBT\t\tWT\t\tTAT");
 
     for(i=0;i<n;i++)
     {
