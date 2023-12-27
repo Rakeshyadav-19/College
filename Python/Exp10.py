@@ -3,4 +3,4 @@
 #1
 import pandas as pd
 File = pd.read_csv('/home/rax/Documents/Sems/All Sems/Python/File.csv')
-File.head()
+print(File.head())

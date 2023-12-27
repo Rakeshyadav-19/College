@@ -1,2 +1,5 @@
-Index,Price,Age,KM,Fuel Type,HP,metcolor
-0,13500,230,46572,Disel,90,10
+Index,Price,Age,KM,  Fuel-Type,HP,metcolor
+0,13500,230,6572,Disel,90,10
+1,13500,230,4552,Petrol,80,10
+2,13500,230,3532,Disel,40,10
+3,13500,230,5572,Petrol,90,10
