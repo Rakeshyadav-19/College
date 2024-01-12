@@ -21,16 +21,20 @@ c.set_max_price(1000)
 c.sell()
 
 #2
-class Solution:
-    def __init__(self):
-        self.__privatecounter = 0
-    def sum(self):
-        self.__privatecounter += 1
-        print(self.__privatecounter)
-count = Solution()
-count.sum()
-count.sum()
-count.sum()
+class Employee:
+  def __init__(self, name, salary):
+    self.name = name
+    self.salary = salary
+
+  def work(self):
+    print(f"{self.name} is working")
+
+  def show(self):
+    print(f"{self.name} earns {self.salary}")
+
+employee = Employee("John", 3000)
+employee.work()
+employee.show()
 
 #Data Abstraction:-
 
