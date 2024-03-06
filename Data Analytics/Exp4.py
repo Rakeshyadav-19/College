@@ -11,7 +11,7 @@ print(df)
 
 print("\n")
 # to read a local file data set
-r = pd.read_csv("/home/rax/Documents/GIT/Sems/All Sems/Data Analytics/file.csv")
+r = pd.read_csv("/home/rax/Documents/GIT/Sems/All Sems/Data Analytics/CSV/file.csv")
 print(r)
 
 # Gives all the information of the data file
@@ -44,6 +44,6 @@ print(pd.options.display.max_rows)
 
 # To set max rows of our own choice
 pd.options.display.max_rows = 9999
-df = pd.read_csv("/home/rax/Documents/GIT/Sems/All Sems/Data Analytics/file.csv")
+df = pd.read_csv("/home/rax/Documents/GIT/Sems/All Sems/Data Analytics/CSV/file.csv")
 print(pd.options.display.max_rows)
 print(df)

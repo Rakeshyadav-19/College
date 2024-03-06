@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 import seaborn as sns #heatmap
 
-r = pd.read_csv("/home/rax/Documents/GIT/Sems/All Sems/Data Analytics/data.csv")
+r = pd.read_csv("/home/rax/Documents/GIT/Sems/All Sems/Data Analytics/CSV/data.csv")
 print(r)
 
 # To check if null value is present , return bool
@@ -17,7 +17,7 @@ print("\n")
 # Check this vlaues if present or not
 missing_value = ["N/a", "na", np.nan]
 # In this 
-a = pd.read_csv("/home/rax/Documents/GIT/Sems/All Sems/Data Analytics/data.csv", na_values = missing_value)
+a = pd.read_csv("/home/rax/Documents/GIT/Sems/All Sems/Data Analytics/CSV/data.csv", na_values = missing_value)
 # 
 print(a.isnull().sum())
 print("\n")
