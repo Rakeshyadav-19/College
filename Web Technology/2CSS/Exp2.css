@@ -2,12 +2,13 @@
     height: 100px;
     width: 100px;
     background: red;
-    transition: width 2s;
+    transition: width 2s , transform 2s;
     animation-delay: 8s;
 }
 
 .nam:hover{
     width: 500px;
+    transform: rotate(180deg);
 }
 
 
