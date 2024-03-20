@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Exp4</title>
+
+    <style>
+        .nav-bar-main{
+            background-color: blue;
+            padding: 20px;
+        }
+        .nav-bar-main a{
+            font-size: 28px;
+            margin-left: 50px;
+            padding: 20px;
+            color: white;
+            text-decoration: none;
+            /* marg */
+        }
+        .nav-bar-main a:hover{
+            background-color: darkblue;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav-bar-main">
+        <a href="#">Home</a>
+        <a href="#">Visit</a>
+        <a href="#">Contact</a>
+        <a href="#">Help</a>
+    </nav>
+
+    <section>
+        <img class="mySlides" src="/home/rax/Pictures/Downlo/545909.jpg">
+        <img class="mySlides" src="/home/rax/Pictures/Downlo/596848.jpg">
+        <img class="mySlides" src="/home/rax/Pictures/Downlo/Gojo.jpg">
+    </section>
+
+    <section>
+        <h2>The bio:</h2>
+        <p class="bio">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id inventore hic quisquam, corporis debitis adipisci dignissimos voluptatem expedita blanditiis vero sed dolorum dolor sequi excepturi reiciendis harum dicta iure Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam alias ipsum amet ea culpa officiis praesentium, cum necessitatibus in ratione beatae consequatur perspiciatis a cupiditate possimus error consectetur atque sapiente.</p>
+    </section>
+
+    <script>
+        // Automatic Slideshow - change image every 3 seconds
+        var myIndex = 0;
+        carousel();
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}
+          x[myIndex-1].style.display = "block";
+          setTimeout(carousel, 3000);
+        }
+        </script>
+</body>
+</html>
